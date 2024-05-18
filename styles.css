@@ -1,0 +1,43 @@
+/* Apply a universal reset to remove margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(20, 66, 18); /* Sets the background color of the entire screen */
+    color: white; /* Sets the text color to white for better readability */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-family: Arial, sans-serif; /* Sets a default font for better readability */
+}
+
+.square {
+    width: 100vw; /* Ensures the square takes the full width of the screen */
+    height: 800px;
+    background-color: rgb(13, 13, 80);
+    position: relative; /* Enable absolute positioning for the text */
+}
+
+.square p {
+    color: rgb(20, 66, 18); /* Ensure the text color is set */
+    position: absolute; /* Position the text absolutely within the square */
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Offset the position to truly center it */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Adjust the size as needed */
+}
+
+.square {
+    position: relative; /* Ensure the square has relative positioning */
+    z-index: 1; /* Set the z-index to 1 to be below the white square */
+}
+
+.square p {
+    z-index: 3; /* Set the z-index to 3 to be above the white square */
+    position: relative; /* Ensure the text has relative positioning */
+}
+
