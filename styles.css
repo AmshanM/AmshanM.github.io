@@ -65,7 +65,7 @@ h1 {
 
 
 
-.big7 {
+.bigg, big7 {
     max-width: 800px; /* Set a maximum width for the container */
     margin: 0 auto; /* Center the container horizontally */
     padding: 40px; /* Add padding around the text */
@@ -136,7 +136,7 @@ h1 {
     border-radius: 20px;
 }
 
-.big8 {
+.cleanedlook3, big8 {
     margin-top: 300px;
     display: flex;
     justify-content: center;
